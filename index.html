@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vanilla JS Starter</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Gunakan defer agar JS jalan setelah DOM siap -->
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="container">
+    <h1>Vanilla JS Starter</h1>
+    <button id="themeToggle" aria-label="Toggle Theme">🌙</button>
+  </header>
+
+  <main class="container">
+    <!-- Counter -->
+    <section class="card">
+      <h2>Counter</h2>
+      <p id="count">0</p>
+      <div class="row">
+        <button id="incBtn">+1</button>
+        <button id="decBtn">-1</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </section>
+
+    <!-- Mini Form -->
+    <section class="card">
+      <h2>Todo Mini</h2>
+      <form id="todoForm">
+        <input id="todoInput" type="text" placeholder="tambah todo..." required />
+        <button type="submit">Tambah</button>
+      </form>
+      <ul id="todoList"></ul>
+      <button id="clearTodos">Bersihkan Semua</button>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© 2025 Dev – Vanilla JS</small>
+  </footer>
+</body>
+</html>
