@@ -9,7 +9,7 @@ function applyTheme(theme) {
   // theme: 'light' | 'dark'
   document.documentElement.setAttribute("data-theme", theme);
   localStorage.setItem(THEME_KEY, theme);
-  themeToggle.textContent = theme === "dark" ? "🌞" : "🌙";
+  themeToggle.textContent = theme === "dark" ? "Light" : "Dark";
 }
 
 function initTheme() {
